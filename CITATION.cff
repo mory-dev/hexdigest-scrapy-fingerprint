@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "HexDigest Adaptive Proxy for Scrapy"
+message: "If this software helps your work, please cite the repository."
+type: software
+authors:
+  - family-names: Mory
+    given-names: Dario
+    email: dario@mory.dev
+repository-code: https://github.com/mory-dev/hexdigest-scrapy-fingerprint
+url: https://hexdigest.com/open-source/scrapy-fingerprint/
+license: MIT
+version: 0.1.0
+date-released: 2026-08-28

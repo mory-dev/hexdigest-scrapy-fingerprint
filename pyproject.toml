@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hexdigest-scrapy-fingerprint"
+version = "0.1.0"
+description = "Browser TLS fingerprints, coherent browser headers, and adaptive proxy fallback for Scrapy."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Dario Mory", email = "dario@mory.dev" }]
+keywords = [
+  "scrapy", "web scraping", "tls fingerprint", "ja3", "curl cffi",
+  "browser impersonation", "proxy", "proxy middleware", "crawler", "retry"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: Scrapy",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+  "Scrapy>=2.11,<3",
+  "tldextract>=5,<6",
+]
+
+[project.optional-dependencies]
+curl = ["curl-cffi>=0.7,<1"]
+test = [
+  "curl-cffi>=0.7,<1",
+  "pytest>=8,<9",
+  "ruff>=0.8,<1",
+  "build>=1.2,<2",
+  "twine>=6,<7",
+]
+
+[project.urls]
+Homepage = "https://hexdigest.com/"
+Documentation = "https://hexdigest.com/open-source/scrapy-fingerprint/"
+Repository = "https://github.com/mory-dev/hexdigest-scrapy-fingerprint"
+Issues = "https://github.com/mory-dev/hexdigest-scrapy-fingerprint/issues"
+Changelog = "https://github.com/mory-dev/hexdigest-scrapy-fingerprint/releases"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem with the middleware
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove proxy credentials, cookies, and private URLs before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: Package and Scrapy versions
+      placeholder: hexdigest-scrapy-fingerprint 0.1.0 / Scrapy 2.x
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include a minimal local reproduction where possible.
+    validations:
+      required: true
