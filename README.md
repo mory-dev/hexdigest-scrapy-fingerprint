@@ -1,8 +1,7 @@
 # HexDigest Scrapy Fingerprint
 
 [![CI](https://github.com/mory-dev/hexdigest-scrapy-fingerprint/actions/workflows/ci.yml/badge.svg)](https://github.com/mory-dev/hexdigest-scrapy-fingerprint/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/hexdigest-scrapy-fingerprint)](https://pypi.org/project/hexdigest-scrapy-fingerprint/)
-[![Python](https://img.shields.io/pypi/pyversions/hexdigest-scrapy-fingerprint)](https://pypi.org/project/hexdigest-scrapy-fingerprint/)
+[![Python](https://img.shields.io/badge/python-3.11%2B-3776ab)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/mory-dev/hexdigest-scrapy-fingerprint)](LICENSE)
 
 Browser TLS fingerprints and adaptive proxy fallback for Scrapy. The package
@@ -34,7 +33,7 @@ adaptive proxy middleware, or any combination of them.
 ## Install
 
 ```bash
-pip install "hexdigest-scrapy-fingerprint[curl]"
+pip install "hexdigest-scrapy-fingerprint[curl] @ git+https://github.com/mory-dev/hexdigest-scrapy-fingerprint.git"
 ```
 
 The base package includes the adaptive proxy and header middleware. The `curl`
