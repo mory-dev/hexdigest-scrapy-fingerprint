@@ -33,7 +33,7 @@ adaptive proxy middleware, or any combination of them.
 ## Install
 
 ```bash
-pip install "hexdigest-scrapy-fingerprint[curl] @ git+https://github.com/mory-dev/hexdigest-scrapy-fingerprint.git"
+pip install "hexdigest-scrapy-fingerprint[curl] @ git+https://github.com/mory-dev/hexdigest-scrapy-fingerprint.git@v0.1.0"
 ```
 
 The base package includes the adaptive proxy and header middleware. The `curl`
