@@ -33,7 +33,7 @@ dependencies = [
 curl = ["curl-cffi>=0.7,<1"]
 test = [
   "curl-cffi>=0.7,<1",
-  "pytest>=8,<9",
+  "pytest>=8,<10",
   "ruff>=0.8,<1",
   "build>=1.2,<2",
   "twine>=6,<7",
